@@ -19,6 +19,7 @@ GNU General Public License for more details.
 #include "application.h" // for MsgSleep()
 #include "window.h" // For MsgBox()
 #include "TextIO.h"
+#include "customDefine.h"
 
 // General note:
 // The use of Sleep() should be avoided *anywhere* in the code.  Instead, call MsgSleep().
@@ -62,8 +63,11 @@ void EarlyAppInit()
 	Object::CreateRootPrototypes();
 }
 
-
-int WINAPI _tWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLine, int nCmdShow)
+#ifdef USE_CUSTOM
+int WINAPI _tWinMain_Remove(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLine, int nCmdShow)
+#else
+int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLine, int nCmdShow)
+#endif
 {
 	g_hInstance = hInstance;
 

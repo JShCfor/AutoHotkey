@@ -215,6 +215,7 @@
     <ClCompile Include="source\ahkversion.cpp" />
     <ClCompile Include="source\application.cpp" />
     <ClCompile Include="source\AutoHotkey.cpp" />
+    <ClCompile Include="source\custom\main.cpp" />
     <ClCompile Include="source\MdFunc.cpp" />
     <ClCompile Include="source\clipboard.cpp" />
     <ClCompile Include="source\Debugger.cpp">

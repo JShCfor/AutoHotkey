@@ -26,6 +26,9 @@
     <Filter Include="DLL">
       <UniqueIdentifier>{16675678-72ca-4a00-af05-6e3801900c77}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Custom">
+      <UniqueIdentifier>{1e63832e-1e22-42af-99b9-e4a8ad4a6505}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\lib\input.cpp">
@@ -189,6 +192,9 @@
     </ClCompile>
     <ClCompile Include="source\script2.cpp">
       <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\custom\main.cpp">
+      <Filter>Custom</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
